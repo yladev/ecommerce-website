@@ -122,6 +122,16 @@ body{
     left: 20px;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+
 /* Home Page */
 #hero{
     background-image: url("../img/hero4.png");
@@ -529,8 +539,6 @@ footer .copyright{
 }
 
 
-
-
 /* Shop Page */
 
 
@@ -559,13 +567,54 @@ footer .copyright{
         justify-content: flex-start;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -300px;
         height: 100vh;
         width: 300px;
         background-color: #E3E6F3;
         box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
     } 
+
+    #navbar.active{
+        right: 0px;
+    }
+    
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    
+    #mobile i{
+         color: #1a1a1a;
+         font-size: 24px;
+         padding-left: 20px;
+    }
+    
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
 }
+
 
 
 
